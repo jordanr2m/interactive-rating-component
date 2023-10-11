@@ -32,7 +32,7 @@ p {
 .container {
     display: flex;
     flex-direction: column;
-    padding: 1.6rem;
+    padding: 1.75rem;
     width: 90%;
     max-width: 350px; /* Must set width and max-width */
     background-color: hsl(213, 19%, 18%);
@@ -43,7 +43,6 @@ p {
 .number-container {
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 
 .circle {
@@ -57,8 +56,8 @@ p {
     align-items: center;
     width: 2rem;
     height: 2rem;
-    padding: 20px;
-    margin: 10px 12px;
+    padding: 1.5rem;
+    margin: 10px;
 }
 
 
@@ -147,5 +146,6 @@ a:hover {
     .circle {
         width: 3.5rem;
         height: 3.5rem;
+        margin: 15px;
     }
   }
