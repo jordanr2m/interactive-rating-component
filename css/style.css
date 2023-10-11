@@ -65,16 +65,16 @@ p {
     cursor: pointer; 
 }
 
-.circle:active {
-    background-color: hsl(25, 97%, 53%);
-}
+/* When button is selected */
+.circle:focus {
+    background-color: rgb(249, 119, 21);
+    color: white;
+  }
 
 .submit {
     width: 100%;
     align-self: center;
     background-color: hsl(25, 97%, 53%);
-    color: hsl(0, 0%, 100%);
-    text-transform: uppercase;
     letter-spacing: 0.15rem;
     font-weight: 505;
     padding: 1rem;
@@ -83,10 +83,19 @@ p {
     margin: 1.25rem 0;
 }
 
+a {
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
+}
+
 .submit:hover {
     background-color: hsl(0, 0%, 100%);
-    color: hsl(25, 97%, 53%);
     cursor: pointer;
+    color: hsl(25, 97%, 53%);
+}
+
+a:hover {
+    color: hsl(25, 97%, 53%);
 }
 
 .attribution { 
@@ -102,7 +111,6 @@ p {
 
 
 /****** Styles for Hidden Thank You window ******/
-
 .hidden {
     display: none;
 }
