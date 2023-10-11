@@ -37,6 +37,7 @@ p {
     max-width: 350px; /* Must set width and max-width */
     background-color: hsl(213, 19%, 18%);
     border-radius: 1rem;
+    overflow: hidden;
 }
 
 .number-container {
@@ -54,11 +55,12 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 2em;
-    height: 2em;
+    width: 2rem;
+    height: 2rem;
     padding: 20px;
     margin: 10px 12px;
 }
+
 
 .circle:hover {
     background-color: hsl(216, 12%, 54%);
@@ -134,3 +136,16 @@ a:hover {
     padding: 0.25rem 0.75rem;
     color: hsl(25, 97%, 53%);
 }
+
+/** Media Queries for Desktop and Tablet **/
+@media only screen and (min-width: 786px) {
+    .container {
+      width: 90%;
+      max-width: 450px;
+    }
+
+    .circle {
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+  }
