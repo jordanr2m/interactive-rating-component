@@ -10,20 +10,20 @@ const ratingSpan = document.querySelector(".rating-selection span");
 
 // Grab all number buttons. No space between words
 let buttonList = document.querySelectorAll("button.circle");
-
-let userRating = "";
+// Set default user rating to 0
+let userRating = "0";
 
 // Make a # rating for each user selection
 buttonList.forEach(function (selection) {
     selection.addEventListener("click", function (e) {
-        userRating = e.target.innerHTML;
+        userRating = e.target.innerText; // Grabbing the text of the targetted button and reassigning it to userRating variable
         // console.log(userRating);
     })
 })
 
 // Submit button functionality
-submitButton.addEventListener("click", function (e){
+submitButton.addEventListener("click", function () {
     startWindow.classList.toggle("hidden");
     thankYouWindow.classList.toggle("hidden");
-    ratingSpan.innerHTML = userRating;
-})
+    ratingSpan.innerText = userRating;
+});
