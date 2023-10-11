@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    height: 100vh;
+    font-size: 15px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(216, 12%, 8%);
+    color: hsl(217, 12%, 63%);
+    font-family: 'Overpass', sans-serif;
+}
+
+h1 {
+    color: hsl(0, 0%, 100%);
+}
+
+p {
+    margin: 0;
+    line-height: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 1.6rem;
+    width: 90%;
+    max-width: 350px; /* Must set width and max-width */
+    background-color: hsl(213, 19%, 18%);
+    border-radius: 1rem;
+}
+
+.number-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle {
+    background-color: hsl(213, 21%, 34%);
+    color: hsl(217, 12%, 63%);
+    border: none;
+    border-radius: 50%;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2em;
+    height: 2em;
+    padding: 20px;
+    margin: 10px 12px;
+}
+
+.circle:hover {
+    background-color: hsl(216, 12%, 54%);
+    cursor: pointer; 
+}
+
+.circle:active {
+    background-color: hsl(25, 97%, 53%);
+}
+
+.submit {
+    width: 100%;
+    align-self: center;
+    background-color: hsl(25, 97%, 53%);
+    color: hsl(0, 0%, 100%);
+    text-transform: uppercase;
+    letter-spacing: 0.15rem;
+    font-weight: 505;
+    padding: 1rem;
+    border: none;
+    border-radius: 50px;
+    margin: 1.25rem 0;
+}
+
+.submit:hover {
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(25, 97%, 53%);
+    cursor: pointer;
+}
+
+.attribution { 
+    font-size: 0.75rem; 
+    text-align: center;
+    align-self: center;
+    padding-top: 1rem;
+}
+
+.attribution a { 
+    color: hsl(197, 100%, 49%); 
+}
+
+
+/****** Styles for Hidden Thank You window ******/
+
+.hidden {
+    display: none;
+}
+
+.thank-you-img {
+    padding-top: 1rem;
+    margin-bottom: 0.6rem;
+}
+
+.thank-you-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.rating-selection {
+    margin: 1.5rem 0 1rem 0;
+    background-color: hsl(213, 21%, 34%);
+    border-radius: 2.5rem;
+    padding: 0.25rem 0.75rem;
+    color: hsl(25, 97%, 53%);
+}
