@@ -9,7 +9,7 @@ const ratingSpan = document.querySelector(".rating-selection span");
 // console.log(ratingSpan);
 
 // Grab all number buttons. No space between words
-let buttonList = document.querySelectorAll("button.circle");
+const buttonList = document.querySelectorAll("button.circle");
 // Set default user rating to 0
 let userRating = "0";
 
